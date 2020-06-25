@@ -47,6 +47,10 @@ nr1 nerdpack:serve
 
 Visit [https://one.newrelic.com/?nerdpacks=local](https://one.newrelic.com/?nerdpacks=local) to launch your app locally.
 
+You can use this nerdlet on Browser application.
+
+Please Go to "Entity explorer" >  "Browser applications" > "{{ YOUR_APPLICATION_NAME }}" > "JS Error Tracking"
+
 ## Deploying this Nerdpack
 
 > Include the necessary steps to deploy your app. Generally, you shouldn't need to change any of these steps.
