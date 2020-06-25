@@ -1,0 +1,7 @@
+{
+    "schemaType": "LAUNCHER",
+    "id": "js-error-tracking-launcher",
+    "displayName": "JsErrorTrackingLauncher",
+    "description": "Describe me",
+    "rootNerdletId": "js-error-tracking-nerdlet"
+}

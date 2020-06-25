@@ -1,0 +1,8 @@
+{
+    "schemaType": "NERDLET",
+    "id": "js-error-tracking-nerdlet",
+    "displayName": "JS Error Tracking",
+    "entities": [{"domain": "BROWSER", "type": "APPLICATION"}],
+    "actionCategory": "troubleshoot",
+    "description": ""
+}
