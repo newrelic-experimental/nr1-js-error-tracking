@@ -1,6 +1,6 @@
 {
-  "schemaType": "NERDPACK",
-  "id": "",
-  "displayName": "{{NERDPACK_NAME}}",
-  "description": "My new nerdpack"
+    "schemaType": "NERDPACK",
+    "id": "af2f4129-089a-4586-9375-4fc1bdc76958",
+    "displayName": "JsErrorTracking",
+    "description": "Nerdpack js-error-tracking"
 }

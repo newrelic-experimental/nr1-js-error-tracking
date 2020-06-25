@@ -1,31 +1,6 @@
 [![New Relic Experimental header](https://github.com/newrelic/open-source-office/raw/master/examples/categories/images/Experimental.png)](https://github.com/newrelic/open-source-office/blob/master/examples/categories/index.md#category-new-relic-experimental)
 
-_Note: DELETE FROM HERE._
-
-# Using this Nerdpack Template
-
-1. Delete this first section containing these instructions from the README.
-2. After cloning the repo that you created from this [template repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository), execute the following commands to initiate the Nerdpack.
-
-```bash
-git clone https://github.com/[ORG_NAME]/[REPO_NAME].git
-cd [REPO_NAME]
-nr1 nerdpack:uuid -gf
-```
-
-Code away.
-
-_Note: DELETE TO HERE._
-
-# {{ NERDPACK_NAME }}
-
-> This template includes advice on how to craft a great README for your app. This template is just a starting point: feel free to change or add sections to suit your project. A few sections are standard across all projects. Don't change the text of those sections, except to customize the Explorer's Hub URL and the Contributing email alias. The standard sections are: "Open source License," "Support," "Community," "Issues / enhancement requests," and "Contributing."
->
-> If you need advice creating your README, ping @hero in the [#documentation](https://newrelic.slack.com/messages/documentation) channel or contact the Open Source Office.
->
-> Before you publish, remove all the commments (the block quotes beginning with `>`), then follow the [standard Nerdpack README review process](https://docs.google.com/document/d/1xUg1NnNJriC0mrUE1hqcHcs5dqzyLoSYE25qjwBaWQE/edit).
-
-![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/newrelic/{{ NERDPACK_NAME }}?include_prereleases&sort=semver) [![Snyk](https://snyk.io/test/github/newrelic/{{ NERDPACK_NAME }}/badge.svg)](https://snyk.io/test/github/newrelic/{{ NERDPACK_NAME }})
+# JS Error Tracking
 
 ## About this Nerdpack
 
@@ -33,12 +8,10 @@ _Note: DELETE TO HERE._
 >
 > For example:
 
-This application analyzes your cloud environment, and figures out where you're wasting money on excess cloud capacity. The application compares the size of your instances to their utilization, and estimates how much you could save by optimizing the size.
+This application show you "Events" just before the JavaScript error happened. You can easy to know what the customer did. You don't need to ask but just see this Nerdlet to grasp customers operation, then no many time needed to reproduce the error.
 
-> Include at least one screenshot. Remove any sensitive data like customer data, NR-only tools, and system information like hostnames (for a full list, see [Docs site security guidelines for images](https://newrelic.jiveon.com/docs/DOC-8362) on Jive).
-
-![Screenshot #1](screenshots/screenshot_01.png)
-![Screenshot #2](screenshots/screenshot_02.png)
+![Screenshot #1](screenshots/img1.png)
+![Screenshot #2](screenshots/img2.png)
 
 ## Open source license
 
@@ -52,12 +25,7 @@ This project is distributed under the [Apache 2 license](LICENSE).
 
 Required:
 
-- [New Relic Infrastructure agent(s) installed](https://docs.newrelic.com/docs/agents/manage-apm-agents/installation/install-agent#infra-install) on your cloud computing devices and the related access to [New Relic One](https://newrelic.com/platform).
-
-You'll get the best possible data out of this application if you also:
-
-- [Activate the EC2 integration](https://docs.newrelic.com/docs/integrations/amazon-integrations/get-started/connect-aws-infrastructure) to group by your cloud provider account.
-- [Install APM on your applications](https://docs.newrelic.com/docs/agents/manage-apm-agents/installation/install-agent#apm-install) to group by application.
+- [New Relic Browser agent(s) installed](https://docs.newrelic.com/docs/browser/new-relic-browser/installation/install-new-relic-browser-agent) on your web application and the related access to [New Relic One](https://newrelic.com/platform).
 
 ## Getting started
 
@@ -72,12 +40,16 @@ npm -v
 3. Execute the following command to clone this repository and run the code locally against your New Relic data:
 
 ```bash
-nr1 nerdpack:clone -r https://github.com/newrelic/{{ NERDPACK_NAME }}.git
-cd {{ NERDPACK_NAME }}
+nr1 nerdpack:clone -r https://github.com/newrelic-experimental/nr1-js-error-tracking.git
+cd nr1-js-error-tracking
 nr1 nerdpack:serve
 ```
 
 Visit [https://one.newrelic.com/?nerdpacks=local](https://one.newrelic.com/?nerdpacks=local) to launch your app locally.
+
+You can use this nerdlet on Browser application.
+
+Please Go to "Entity explorer" >  "Browser applications" > "{{ YOUR_APPLICATION_NAME }}" > "JS Error Tracking"
 
 ## Deploying this Nerdpack
 

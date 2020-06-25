@@ -1,0 +1,22 @@
+@import '~@newrelic/nr1-community/dist/index.css';
+@import url('//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css');
+
+.lv {
+
+  &Row {
+    display: flex;
+  }
+
+  &Label {
+    margin-right: 8px;
+    min-width: 120px
+  }
+
+  &Value {
+    flex-grow: 1;
+  }
+}
+
+.detailTrace {
+  margin-top: 8px;
+}
